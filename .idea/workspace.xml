@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/DefaultFireStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/FireStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/FourDirFireStrategy.java" afterDir="false" />
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/PropertyMgr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config" beforeDir="false" afterPath="$PROJECT_DIR$/src/config" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/DefaultFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/GameFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/FourDirFireStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/FourDirFireStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/FireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/FireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/FourDirFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/FourDirFireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/tencent/tank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -57,17 +84,23 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea_workspace\tank\src\com\tencent\tank" />
-      <recent name="D:\idea_workspace\tank\src\audio" />
-      <recent name="D:\idea_workspace\tank\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tencent.tank" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tencent.tank" />
       <recent name="test" />
     </key>
+<<<<<<< HEAD
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_workspace\tank\src\com\tencent\tank" />
+      <recent name="D:\idea_workspace\tank\src\audio" />
+      <recent name="D:\idea_workspace\tank\src" />
+=======
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tencent.tank.abstractfactory" />
       <recent name="com.tencent.tank" />
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     </key>
   </component>
   <component name="RunDashboard">
@@ -183,9 +216,9 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Audio" />
-      <item itemvalue="Application.PropertyMgr" />
       <item itemvalue="JUnit.ImageRotateTest.test" />
       <item itemvalue="JUnit.ImageRotateTest" />
+      <item itemvalue="Application.PropertyMgr" />
     </list>
     <recent_temporary>
       <list>
@@ -229,8 +262,15 @@
       <workItem from="1654648250702" duration="84000" />
       <workItem from="1654763876232" duration="2350000" />
       <workItem from="1654818089715" duration="4658000" />
+<<<<<<< HEAD
+      <workItem from="1655081654949" duration="524000" />
+=======
       <workItem from="1655081654949" duration="592000" />
-      <workItem from="1655688084744" duration="1984000" />
+      <workItem from="1655688084744" duration="2223000" />
+      <workItem from="1655690961714" duration="26000" />
+      <workItem from="1656029273936" duration="5432000" />
+      <workItem from="1656037410841" duration="4288000" />
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     </task>
     <servers />
   </component>

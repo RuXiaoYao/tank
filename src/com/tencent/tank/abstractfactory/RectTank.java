@@ -1,15 +1,21 @@
-package com.tencent.tank;
+package com.tencent.tank.abstractfactory;
 
-import com.tencent.tank.abstractfactory.BaseTank;
+import com.tencent.tank.*;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public class Tank extends BaseTank {
+/**
+ * @Auther: Yu Panpan
+ * @Date: 2022/6/24 - 06 - 24 - 11:08
+ * @Description: com.tencent.tank.abstractfactory
+ * @version: 1.0
+ */
+public class RectTank extends BaseTank {
 
-    private int x,y;
-    private Dir dir;
+    int x,y;
+    Dir dir;
     private static final int SPEED = 6;
 
     private boolean moving = true;
@@ -20,16 +26,11 @@ public class Tank extends BaseTank {
     public static final int WIDTH = ResourceMgr.badTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
-<<<<<<< HEAD
-    TankFrame tf = null;
-    private Group group = Group.BAD;
-
-    Rectangle rect = new Rectangle();
-=======
     public TankFrame tf = null;
->>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
 
-    public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
+    FireStrategy fs = null;
+
+    public RectTank(int x,int y,Dir dir,Group group,TankFrame tf){
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -40,13 +41,34 @@ public class Tank extends BaseTank {
         rect.y = y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
+
+        if(this.group == Group.GOOD){
+            String goodFS = (String)PropertyMgr.get("goodFS");
+
+            //JDK1.9之后不推荐使用newInstance()
+//                fs = (FourDirFireStrategy)Class.forName(goodFS).newInstance();
+            try {
+                fs = (FourDirFireStrategy)Class.forName(goodFS).getDeclaredConstructor().newInstance();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }else{
+            fs = new DefaultFireStrategy();
+        }
     }
 
     public void setGroup(Group group) {
         this.group = group;
     }
 
-    @Override
     public int getX() {
         return x;
     }
@@ -55,7 +77,6 @@ public class Tank extends BaseTank {
         this.x = x;
     }
 
-    @Override
     public int getY() {
         return y;
     }
@@ -86,20 +107,10 @@ public class Tank extends BaseTank {
             tf.enemiesTank.remove(this);
         }
 
-        switch (dir){
-            case LEFT:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankL : ResourceMgr.goodTankL,x,y,null);
-                break;
-            case UP:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankU : ResourceMgr.goodTankU,x,y,null);
-                break;
-            case RIGHT:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankR : ResourceMgr.goodTankR,x,y,null);
-                break;
-            case DOWN:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankD : ResourceMgr.goodTankD,x,y,null);
-                break;
-        }
+        Color c = g.getColor();
+        g.setColor(this.group == Group.GOOD ? Color.GREEN : Color.yellow);
+        g.fillRect(x,y,40,40);
+        g.setColor(c);
 
         move();
     }
@@ -159,25 +170,18 @@ public class Tank extends BaseTank {
 
 
     public void fire() {
-<<<<<<< HEAD
-        int bX = this.x + WIDTH/2 -Bullet.WIDTH/2;
-        int bY = this.y + HEIGHT/2 - Bullet.HEIGHT/2;
-        tf.bullets.add(new Bullet(bX,bY,this.dir,this.group,this.tf));
-=======
         int bX = this.x + Tank.WIDTH/2 - Bullet.WIDTH/2;
         int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
         for(Dir dir : Dir.values()){
 //            new Bullet(bX,bY,dir,t.group,t.tf);
             this.tf.gf.createBullet(bX,bY,dir,this.group,this.tf);
         }
->>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
 
         if(this.group == Group.GOOD){
             new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
         }
     }
 
-    @Override
     public void die() {
         this.living = false;
     }

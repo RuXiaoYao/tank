@@ -21,12 +21,21 @@ public class Tank extends BaseTank {
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     TankFrame tf = null;
     private Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
 =======
     public TankFrame tf = null;
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+    public TankFrame tf = null;
+
+    FireStrategy fs = null;
 >>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
 
     public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
@@ -40,6 +49,34 @@ public class Tank extends BaseTank {
         rect.y = y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
+<<<<<<< HEAD
+=======
+
+        if(this.group == Group.GOOD){
+            String goodFS = (String)PropertyMgr.get("goodFS");
+
+            //JDK1.9之后不推荐使用newInstance()
+//                fs = (FourDirFireStrategy)Class.forName(goodFS).newInstance();
+            try {
+                fs = (FourDirFireStrategy)Class.forName(goodFS).getDeclaredConstructor().newInstance();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }else{
+            fs = new DefaultFireStrategy();
+        }
+<<<<<<< HEAD
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     }
 
     public void setGroup(Group group) {
@@ -160,16 +197,28 @@ public class Tank extends BaseTank {
 
     public void fire() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         int bX = this.x + WIDTH/2 -Bullet.WIDTH/2;
         int bY = this.y + HEIGHT/2 - Bullet.HEIGHT/2;
         tf.bullets.add(new Bullet(bX,bY,this.dir,this.group,this.tf));
 =======
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
         int bX = this.x + Tank.WIDTH/2 - Bullet.WIDTH/2;
         int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
         for(Dir dir : Dir.values()){
 //            new Bullet(bX,bY,dir,t.group,t.tf);
             this.tf.gf.createBullet(bX,bY,dir,this.group,this.tf);
         }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
 >>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
 
         if(this.group == Group.GOOD){

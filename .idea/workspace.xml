@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/PropertyMgr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
@@ -18,6 +20,30 @@
       <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectTank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/DefaultFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/GameFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/BaseTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/DefaultFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/GameFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectExplode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/abstractfactory/RectTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" afterDir="false" />
@@ -35,6 +61,12 @@
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
 >>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -270,6 +302,12 @@
       <workItem from="1655690961714" duration="26000" />
       <workItem from="1656029273936" duration="5432000" />
       <workItem from="1656037410841" duration="4288000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
+>>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
+=======
 >>>>>>> parent of a7ed9c8 (Revert "代码重构-使用抽象工厂，动态添加产品族")
     </task>
     <servers />
